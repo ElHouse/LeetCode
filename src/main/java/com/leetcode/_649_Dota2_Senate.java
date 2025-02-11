@@ -1,6 +1,7 @@
 package com.leetcode;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class _649_Dota2_Senate {
 

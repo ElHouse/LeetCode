@@ -3,7 +3,7 @@ package com.leetcode;
 import com.leetcode.structure.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class _206_Reverse_inked_ListTest {
 

@@ -1,8 +1,8 @@
 package com.leetcode;
 
-import java.util.stream.IntStream;
-
 import com.leetcode.structure.TreeNode;
+
+import java.util.stream.IntStream;
 
 
 public class _654_Maximum_Binary_Tree {

@@ -2,7 +2,7 @@ package com.leetcode;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _2352_Equal_Row_and_Column_PairsTest {
 

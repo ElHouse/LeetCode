@@ -1,12 +1,11 @@
 package com.leetcode;
 
-import com.leetcode._783_Minimum_Distance_Between_BST_Nodes;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _783_Minimum_Distance_Between_BST_NodesTest {
 

@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _701_Insert_into_a_Binary_Search_TreeTest {
 
 

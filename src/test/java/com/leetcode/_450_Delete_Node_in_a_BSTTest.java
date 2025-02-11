@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _450_Delete_Node_in_a_BSTTest {
 
     _450_Delete_Node_in_a_BST deleteNodeInABst = new _450_Delete_Node_in_a_BST();

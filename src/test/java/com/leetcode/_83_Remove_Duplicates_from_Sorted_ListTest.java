@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.structure.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _83_Remove_Duplicates_from_Sorted_ListTest {
 
 

@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _654_Maximum_Binary_TreeTest {
 
     _654_Maximum_Binary_Tree maximumBinaryTree = new _654_Maximum_Binary_Tree();

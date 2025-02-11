@@ -1,6 +1,5 @@
 package com.leetcode;
 
-import com.leetcode._108_Convert_Sorted_Array_to_Binary_Search_Tree;
 import org.junit.jupiter.api.Test;
 
 class _108_Convert_Sorted_Array_to_Binary_Search_TreeTest {

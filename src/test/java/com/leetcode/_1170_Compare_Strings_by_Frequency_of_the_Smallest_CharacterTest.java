@@ -1,10 +1,10 @@
 package com.leetcode;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _1170_Compare_Strings_by_Frequency_of_the_Smallest_CharacterTest {
 

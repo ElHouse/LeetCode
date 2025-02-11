@@ -1,10 +1,10 @@
 package com.leetcode;
 
+import com.leetcode.structure.TreeNode;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import com.leetcode.structure.TreeNode;
 
 public class _988_Smallest_String_Starting_From_Leaf {
 

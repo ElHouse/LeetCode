@@ -1,8 +1,7 @@
 package com.leetcode;
 
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _609_Find_Duplicate_File_in_SystemTest {
 

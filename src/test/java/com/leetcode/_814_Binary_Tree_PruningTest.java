@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _814_Binary_Tree_PruningTest {
 
     _814_Binary_Tree_Pruning binaryTreePruning = new _814_Binary_Tree_Pruning();

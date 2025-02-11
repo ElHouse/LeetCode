@@ -3,7 +3,8 @@ package com.leetcode;
 import com.leetcode.structure.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class _2095_Delete_the_Middle_Node_of_a_Linked_ListTest {
 

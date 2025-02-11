@@ -1,13 +1,13 @@
 package com.leetcode;
 
-import com.leetcode._865_Smallest_Subtree_with_all_the_Deepest_Nodes;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.leetcode.structure.TreeNode.crearArbol;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _865_Smallest_Subtree_with_all_the_Deepest_NodesTest {
 

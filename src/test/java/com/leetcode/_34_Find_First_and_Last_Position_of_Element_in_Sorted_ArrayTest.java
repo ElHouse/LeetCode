@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._34_Find_First_and_Last_Position_of_Element_in_Sorted_Array;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class _34_Find_First_and_Last_Position_of_Element_in_Sorted_ArrayTest {
 

@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _669_Trim_a_Binary_Search_TreeTest {
 
     _669_Trim_a_Binary_Search_Tree trimABinarySearchTree = new _669_Trim_a_Binary_Search_Tree();

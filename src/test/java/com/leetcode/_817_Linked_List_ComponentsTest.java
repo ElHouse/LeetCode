@@ -3,7 +3,7 @@ package com.leetcode;
 import com.leetcode.structure.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _817_Linked_List_ComponentsTest {
 

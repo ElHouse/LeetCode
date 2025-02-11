@@ -1,3 +1,4 @@
+package com.leetcode;
 
 public class _278_First_Bad_Version {
 
@@ -11,7 +12,7 @@ public class _278_First_Bad_Version {
 		return true;
 	}
 	
-	public int firstBadVersion(int n) throws InterruptedException {
+	public int firstBadVersion(int n)  {
 
 		if(n<=0) return 0;
 				

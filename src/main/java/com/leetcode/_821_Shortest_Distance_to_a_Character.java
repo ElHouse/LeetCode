@@ -1,14 +1,7 @@
 package com.leetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-
 public class _821_Shortest_Distance_to_a_Character {
 
-
-	
 //	Runtime: 2 ms, faster than 33.87% of Java online submissions for Shortest Distance to a Character.
 //	Memory Usage: 36.5 MB, less than 100.00% of Java online submissions for Shortest Distance to a Character.
 	public int[] shortestToChar(String S, char C) {

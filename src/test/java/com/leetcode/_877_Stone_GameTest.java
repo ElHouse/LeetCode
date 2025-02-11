@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._877_Stone_Game;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class _877_Stone_GameTest {
 

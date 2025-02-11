@@ -1,7 +1,5 @@
 package com.leetcode;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import com.leetcode.structure.ListNode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;

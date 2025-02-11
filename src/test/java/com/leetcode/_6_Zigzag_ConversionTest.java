@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._6_Zigzag_Conversion;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _6_Zigzag_ConversionTest {
 

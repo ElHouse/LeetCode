@@ -1,6 +1,5 @@
 package com.leetcode;
 
-import com.leetcode._24_Swap_Nodes_in_Pairs;
 import com.leetcode.structure.ListNode;
 import org.junit.jupiter.api.Test;
 

@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._3396_Minimum_Number_of_Operations_to_Make_Elements_in_Array_Distinct;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _3396_Minimum_Number_of_Operations_to_Make_Elements_in_Array_DistinctTest {
 

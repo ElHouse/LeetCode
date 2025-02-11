@@ -1,6 +1,5 @@
 package com.leetcode.structure;
 
-import com.leetcode.structure.Heap;
 import org.junit.jupiter.api.Test;
 
 class HeapTest {

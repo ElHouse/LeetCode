@@ -2,8 +2,6 @@ package com.leetcode;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _49_Group_AnagramsTest {
 
 

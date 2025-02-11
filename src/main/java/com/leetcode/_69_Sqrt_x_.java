@@ -1,3 +1,4 @@
+package com.leetcode;
 
 public class _69_Sqrt_x_ {
 

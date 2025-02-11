@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._274_H_Index;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _274_H_IndexTest {
 

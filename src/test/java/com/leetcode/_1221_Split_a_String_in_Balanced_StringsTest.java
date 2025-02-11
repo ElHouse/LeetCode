@@ -1,8 +1,8 @@
 package com.leetcode;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _1221_Split_a_String_in_Balanced_StringsTest {
 

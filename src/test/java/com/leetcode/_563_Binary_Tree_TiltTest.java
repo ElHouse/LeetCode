@@ -1,13 +1,12 @@
 package com.leetcode;
 
-import com.leetcode._563_Binary_Tree_Tilt;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _563_Binary_Tree_TiltTest {
 

@@ -2,7 +2,7 @@ package com.leetcode;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _1160_Find_Words_That_Can_Be_Formed_by_CharactersTest {
 

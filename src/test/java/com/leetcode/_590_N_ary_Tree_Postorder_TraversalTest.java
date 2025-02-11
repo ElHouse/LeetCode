@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _590_N_ary_Tree_Postorder_TraversalTest {
 
 

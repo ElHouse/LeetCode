@@ -1,9 +1,9 @@
 package com.leetcode;
 
+import com.leetcode.structure.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
-
-import com.leetcode.structure.TreeNode;
 
 public class _114_Flatten_Binary_Tree_to_Linked_List {
 

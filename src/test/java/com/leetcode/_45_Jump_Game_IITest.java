@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._45_Jump_Game_II;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _45_Jump_Game_IITest {
 

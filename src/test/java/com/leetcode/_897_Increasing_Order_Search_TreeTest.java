@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _897_Increasing_Order_Search_TreeTest {
 
     _897_Increasing_Order_Search_Tree increasingOrderSearchTree = new _897_Increasing_Order_Search_Tree();

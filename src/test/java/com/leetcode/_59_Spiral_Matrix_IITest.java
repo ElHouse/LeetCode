@@ -2,8 +2,6 @@ package com.leetcode;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _59_Spiral_Matrix_IITest {
 
     _59_Spiral_Matrix_II spiralMatrixIi = new _59_Spiral_Matrix_II();

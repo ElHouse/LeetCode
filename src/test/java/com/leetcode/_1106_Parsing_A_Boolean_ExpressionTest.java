@@ -1,8 +1,9 @@
 package com.leetcode;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class _1106_Parsing_A_Boolean_ExpressionTest {
 

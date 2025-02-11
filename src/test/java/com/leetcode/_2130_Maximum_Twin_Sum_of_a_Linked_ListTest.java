@@ -3,7 +3,7 @@ package com.leetcode;
 import com.leetcode.structure.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _2130_Maximum_Twin_Sum_of_a_Linked_ListTest {
 

@@ -2,7 +2,7 @@ package com.leetcode;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _1249_Minimum_Remove_to_Make_Valid_ParenthesesTest {
     private final _1249_Minimum_Remove_to_Make_Valid_Parentheses minimumRemoveToMakeValidParentheses = new _1249_Minimum_Remove_to_Make_Valid_Parentheses();

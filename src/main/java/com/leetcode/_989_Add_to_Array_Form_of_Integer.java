@@ -1,10 +1,6 @@
 package com.leetcode;
 
-import java.util.ArrayList;
- import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 
 public class _989_Add_to_Array_Form_of_Integer {

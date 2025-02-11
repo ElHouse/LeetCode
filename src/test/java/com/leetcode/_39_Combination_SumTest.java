@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _39_Combination_SumTest {
 
     _39_Combination_Sum combination_sum = new _39_Combination_Sum();

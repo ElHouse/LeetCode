@@ -1,7 +1,5 @@
 package com.leetcode;
 
-import java.util.Stack;
-
 public class _2390_Removing_Stars_From_a_String {
 
 

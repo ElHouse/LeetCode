@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _617_Merge_Two_Binary_TreesTest {
 
     _617_Merge_Two_Binary_Trees mergeTwoBinaryTrees = new _617_Merge_Two_Binary_Trees();

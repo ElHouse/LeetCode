@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._3386_Button_with_Longest_Push_Time;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _3386_Button_with_Longest_Push_TimeTest {
 

@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.structure.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _160_Intersection_of_Two_Linked_ListsTest {
 
     private final _160_Intersection_of_Two_Linked_Lists intersectionOfTwoLinkedLists = new _160_Intersection_of_Two_Linked_Lists();

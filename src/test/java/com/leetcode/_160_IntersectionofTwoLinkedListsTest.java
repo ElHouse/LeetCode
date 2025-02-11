@@ -1,10 +1,10 @@
 package com.leetcode;
 
-import com.leetcode._160_IntersectionofTwoLinkedLists;
 import com.leetcode.structure.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class _160_IntersectionofTwoLinkedListsTest {
 

@@ -1,10 +1,9 @@
 package com.leetcode;
 
-import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _88_Merge_Sorted_ArrayTest {
 

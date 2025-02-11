@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.structure.ListNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _445_Add_Two_Numbers_IITest {
 
     _445_Add_Two_Numbers_II addTwoNumbersIi = new _445_Add_Two_Numbers_II();

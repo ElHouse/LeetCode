@@ -1,3 +1,4 @@
+package com.leetcode;
 
 public class _167_TwoSumII_Input_array_is_sorted {
 	

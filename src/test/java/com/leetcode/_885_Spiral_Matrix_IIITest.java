@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._885_Spiral_Matrix_III;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class _885_Spiral_Matrix_IIITest {
 

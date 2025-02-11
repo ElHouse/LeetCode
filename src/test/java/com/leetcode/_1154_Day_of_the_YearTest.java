@@ -1,11 +1,10 @@
 package com.leetcode;
 
-import com.leetcode._1154_Day_of_the_Year;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _1154_Day_of_the_YearTest {
 

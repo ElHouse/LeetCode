@@ -1,8 +1,8 @@
 package com.leetcode;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _154_Find_Minimum_in_Rotated_Sorted_Array_IITest {
 

@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.pendientes._29_Divide_Two_Integers;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _29_Divide_Two_IntegersTest {
 
 

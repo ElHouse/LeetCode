@@ -3,8 +3,6 @@ package com.leetcode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _449_Serialize_and_Deserialize_BSTTest {
 
     //TODO, cambiar a vaarios metodos test

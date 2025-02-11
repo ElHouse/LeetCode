@@ -3,7 +3,7 @@ package com.leetcode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _1038_Binary_Search_Tree_to_Greater_Sum_TreeTest {
 

@@ -1,13 +1,12 @@
 package com.leetcode;
 
-import com.leetcode._230_Kth_Smallest_Element_in_a_BST;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _230_Kth_Smallest_Element_in_a_BSTTest {
 

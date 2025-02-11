@@ -1,9 +1,9 @@
 package com.leetcode;
 
-import org.junit.jupiter.api.Test;
 import com.leetcode.structure.TreeNode;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _606_Construct_String_from_Binary_TreeTest {
 

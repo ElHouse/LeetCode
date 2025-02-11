@@ -1,7 +1,5 @@
 package com.leetcode;
 
-import java.util.Arrays;
-
 public class _443_String_Compression {
     /*
     Given an array of characters chars, compress it using the following algorithm:

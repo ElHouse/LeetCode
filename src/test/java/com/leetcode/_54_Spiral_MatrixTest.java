@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _54_Spiral_MatrixTest {
 
     _54_Spiral_Matrix spiralMatrix = new _54_Spiral_Matrix();

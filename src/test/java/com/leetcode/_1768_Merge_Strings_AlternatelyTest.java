@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._1768_Merge_Strings_Alternately;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _1768_Merge_Strings_AlternatelyTest {
 

@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._3392_Count_Subarrays_of_Length_Three_With_a_Condition;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _3392_Count_Subarrays_of_Length_Three_With_a_ConditionTest {
 

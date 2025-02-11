@@ -1,10 +1,9 @@
 package com.leetcode;
 
-import com.leetcode._671_Second_Minimum_Node_In_a_Binary_Tree;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _671_Second_Minimum_Node_In_a_Binary_TreeTest {
 

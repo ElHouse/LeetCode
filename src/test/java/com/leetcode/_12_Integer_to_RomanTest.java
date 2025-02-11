@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._12_Integer_to_Roman;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _12_Integer_to_RomanTest {
 

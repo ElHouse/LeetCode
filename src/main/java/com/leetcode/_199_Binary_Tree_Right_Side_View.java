@@ -1,12 +1,12 @@
 package com.leetcode;
 
 
+import com.leetcode.structure.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-
-import com.leetcode.structure.TreeNode;
 
 public class _199_Binary_Tree_Right_Side_View {
 

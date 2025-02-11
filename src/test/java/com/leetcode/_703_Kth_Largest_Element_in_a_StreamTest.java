@@ -3,7 +3,7 @@ package com.leetcode;
 import com.leetcode.pendientes._703_Kth_Largest_Element_in_a_Stream;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _703_Kth_Largest_Element_in_a_StreamTest {
 

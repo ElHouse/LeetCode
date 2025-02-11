@@ -1,3 +1,4 @@
+package com.leetcode;
 
 public class _686_Repeated_String_Match {
 

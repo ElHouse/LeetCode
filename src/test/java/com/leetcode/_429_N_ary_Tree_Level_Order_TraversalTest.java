@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _429_N_ary_Tree_Level_Order_TraversalTest {
 
     _429_N_ary_Tree_Level_Order_Traversal levelOrder = new _429_N_ary_Tree_Level_Order_Traversal();

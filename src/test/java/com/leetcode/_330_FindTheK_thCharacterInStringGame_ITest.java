@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._330_FindTheK_thCharacterInStringGame_I;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _330_FindTheK_thCharacterInStringGame_ITest {
 

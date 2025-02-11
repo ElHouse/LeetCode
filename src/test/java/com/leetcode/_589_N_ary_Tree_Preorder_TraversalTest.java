@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _589_N_ary_Tree_Preorder_TraversalTest {
     //TODO asserts
     _589_N_ary_Tree_Preorder_Traversal nAryTreePreorderTraversal = new _589_N_ary_Tree_Preorder_Traversal();

@@ -1,11 +1,10 @@
 package com.leetcode;
 
-import com.leetcode._75_Sort_Colors;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class _75_Sort_ColorsTest {
 

@@ -1,9 +1,5 @@
 package com.leetcode;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 class _211_Add_and_Search_Word_Data_structure_designTest {
 //TODO ver que onda
 /*

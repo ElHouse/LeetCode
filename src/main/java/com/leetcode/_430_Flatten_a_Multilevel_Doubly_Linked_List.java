@@ -1,7 +1,5 @@
 package com.leetcode;
 
-import com.leetcode.structure.Node;
-
 public class _430_Flatten_a_Multilevel_Doubly_Linked_List {
 
 	/*

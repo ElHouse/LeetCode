@@ -1,3 +1,4 @@
+package com.leetcode;
 
 public class _122_Best_Time_to_Buy_and_Sell_Stock_II {
 
@@ -38,7 +39,8 @@ public class _122_Best_Time_to_Buy_and_Sell_Stock_II {
 				
 		return suma;
 	}
-	
+
+	//TODO, cambiar a tests
 	public static void main(String[] args) {
 		
 		int[] list1 = {7,1,5,3,6,4};

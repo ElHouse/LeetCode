@@ -3,7 +3,7 @@ package com.leetcode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _235_Lowest_Common_Ancestor_of_a_Binary_Search_TreeTest {
 

@@ -2,8 +2,6 @@ package com.leetcode;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _225_Implement_Stack_using_QueuesTest {
 
     private final _225_Implement_Stack_using_Queues implementStackUsingQueues = new _225_Implement_Stack_using_Queues();

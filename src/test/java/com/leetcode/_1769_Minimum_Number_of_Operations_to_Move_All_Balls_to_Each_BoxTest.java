@@ -1,9 +1,8 @@
 package com.leetcode;
 
-import com.leetcode._1769_Minimum_Number_of_Operations_to_Move_All_Balls_to_Each_Box;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class _1769_Minimum_Number_of_Operations_to_Move_All_Balls_to_Each_BoxTest {
 

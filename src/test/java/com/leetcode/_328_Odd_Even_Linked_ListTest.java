@@ -2,8 +2,6 @@ package com.leetcode;
 
 import com.leetcode.structure.ListNode;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _328_Odd_Even_Linked_ListTest {
 
 //TODO poner asserts

@@ -2,8 +2,6 @@ package com.leetcode;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class _763_Partition_LabelsTest {
 
     _763_Partition_Labels partition_labels = new _763_Partition_Labels();
