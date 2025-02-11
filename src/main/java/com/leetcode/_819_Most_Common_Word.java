@@ -32,7 +32,7 @@ public class _819_Most_Common_Word {
 				.replaceAll(";","")
 				.replaceAll("\\.","").toLowerCase();
 		
-		paragraph.replace("  ", " ").trim();
+		paragraph.replace("  ", " ");
 		
 		System.out.println("sin signos->"+paragraph );
 		

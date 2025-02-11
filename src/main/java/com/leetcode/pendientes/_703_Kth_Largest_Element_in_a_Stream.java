@@ -56,7 +56,7 @@ public class _703_Kth_Largest_Element_in_a_Stream {
     }
 
     private int k = 0;
-    private Heap heap;
+    private final Heap heap;
 
     public _703_Kth_Largest_Element_in_a_Stream(int k, int[] nums) {
         this.heap = new Heap(nums);

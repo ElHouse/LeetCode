@@ -27,7 +27,7 @@ public class _1249_Minimum_Remove_to_Make_Valid_Parentheses {
         }
 
         while (count > 0) {
-            System.out.println("--->" + sb.toString());
+            System.out.println("--->" + sb);
             removeLastParentesis(sb);
             count--;
         }

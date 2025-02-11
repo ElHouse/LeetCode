@@ -1,3 +1,5 @@
+package com.leetcode;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,7 +26,7 @@ public class _1146_Snapshot_Array {
 			snaps.get(index).add(val);
 		}else if(aux.size() > count) {
 			snaps.get(index).set(count, val);
-		}else if(count > aux.size()) {
+		}else {
 			snaps.get(index).add(val);
 		}
 		
@@ -37,7 +39,7 @@ public class _1146_Snapshot_Array {
 	public int get(int index, int snap_id) {
 		
 		List<Integer> aux = snaps.get(index);
-		if( aux.size() == 0 ) return 0;
+		if(aux.isEmpty()) return 0;
 		else if( snap_id < aux.size()) return snaps.get(index).get(snap_id);
 		else if(snap_id>= aux.size())  return snaps.get(index).get(aux.size()-1);
 		System.out.println("else 2");

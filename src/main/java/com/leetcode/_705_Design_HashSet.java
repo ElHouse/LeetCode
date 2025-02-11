@@ -1,10 +1,10 @@
+package com.leetcode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class _705_Design_HashSet {
 
-
-	
     public  _705_Design_HashSet() {
         
     	entities = new Entity[n];
@@ -49,13 +49,9 @@ public class _705_Design_HashSet {
     	System.out.println("Remove>");
 
     	this.entities[i].list.forEach(System.out::println);
-    	
-    	Integer aux = this.entities[i].list.stream().filter(a->a==key).findFirst().orElse(null);
-    	
-    	if( aux != null ) {
 
-    		entities[i].list.remove(aux);
-    	}
+        this.entities[i].list.stream().filter(a -> a == key).findFirst().ifPresent(aux -> entities[i].list.remove(aux));
+
     }
     
     /** Returns true if this set contains the specified element */

@@ -22,7 +22,7 @@ public class _235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree {
 		found = false;
 		algo(root, path2, q );
 		
-		if( path1.size() == 0 || path2.size()==0) return null;
+		if(path1.isEmpty() || path2.isEmpty()) return null;
 		
 		int auxI = path1.size()>path2.size()?path1.size()-path2.size():0;
 		int auxJ = path2.size()>path1.size()?path2.size()-path1.size():0;

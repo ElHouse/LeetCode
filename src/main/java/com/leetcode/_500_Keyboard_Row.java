@@ -59,7 +59,7 @@ public class _500_Keyboard_Row {
     	
     	for(Character c : word.toCharArray()) {
     	    		
-    		if(set[c-'a']==false) return false;
+    		if(!set[c - 'a']) return false;
     		
     	}
     	

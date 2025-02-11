@@ -55,8 +55,7 @@ public class _445_Add_Two_Numbers_II {
     	    
     	ListNode tail = newHead;
     	for (int i = 0; i < n-1; i++) {
-    		ListNode aux = new ListNode(0);
-    		tail.next = aux;
+    		tail.next = new ListNode(0);
     		tail = tail.next;
 		}
     	

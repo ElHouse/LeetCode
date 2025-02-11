@@ -1,3 +1,5 @@
+package com.leetcode;
+
 import java.util.Arrays;
 
 public class _344_Reverse_String {

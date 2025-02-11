@@ -13,7 +13,7 @@ public class _14_Longest_Common_Prefix {
 	           if(strs[i].length()<minSize)  minSize = strs[i].length();            
 	        }
 	        
-	        StringBuilder sb = new StringBuilder("");
+	        StringBuilder sb = new StringBuilder();
 	        
 	        for(int i=0; i<minSize; i++){            
 	          

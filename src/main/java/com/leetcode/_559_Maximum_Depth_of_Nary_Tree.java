@@ -43,7 +43,7 @@ public class _559_Maximum_Depth_of_Nary_Tree {
         }
     }
 
-    ;
+
 
 }
 

@@ -30,18 +30,14 @@ public class _114_Flatten_Binary_Tree_to_Linked_List {
 
         if (root.left != null && root.right != null) {
             TreeNode max = getMax(root.left);
-            TreeNode right = root.right;
-            max.right = right;
-            TreeNode aux = null;
-            root.right = aux;
+            max.right = root.right;
+            root.right = null;
             algo(root.left);
-        } else if (root.left != null && root.right == null) {
-            TreeNode aux = null;
-            TreeNode left = root.left;
-            root.right = left;
-            root.left = aux;
+        } else if (root.left != null) {
+            root.right = root.left;
+            root.left = null;
             algo(root.right);
-        } else if (root.left == null && root.right != null) {
+        } else if (root.right != null) {
             algo(root.right);
         }
 

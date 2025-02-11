@@ -4,7 +4,7 @@ package com.leetcode;
 public class _168_Excel_Sheet_Column_Title {
 
 
-    private String[] alphabet = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "Q", "R", "S", "T", "U", "v", "W", "X", "Y", "Z"};
+    private final String[] alphabet = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "Q", "R", "S", "T", "U", "v", "W", "X", "Y", "Z"};
 
     //TODO: no funciona ver que onda
 

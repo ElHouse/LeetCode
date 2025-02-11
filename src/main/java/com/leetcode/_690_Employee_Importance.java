@@ -36,7 +36,7 @@ public class _690_Employee_Importance {
     		
     		imp+=aux.importance;
     		
-    		if(aux.subordinates != null && aux.subordinates.size() != 0) {
+    		if(aux.subordinates != null && !aux.subordinates.isEmpty()) {
     			imp += subordinatesImportance(aux.subordinates, employees);
     		}
     		
@@ -69,5 +69,5 @@ public class _690_Employee_Importance {
         public int importance;
         // the id of direct subordinates
         public List<Integer> subordinates;
-    };
+    }
 }

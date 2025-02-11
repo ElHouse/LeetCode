@@ -28,8 +28,7 @@ public class _61_Rotate_List {
 		
 		if(k==size) return head;
 		
-		ListNode newTail = head;
-		ListNode newTailAux = head;
+ 		ListNode newTailAux = head;
 		
 		for(int i=0; i<size-k-1; i++) {
 			newTailAux = newTailAux.next;
@@ -44,7 +43,7 @@ public class _61_Rotate_List {
 			newHeadAux = newHeadAux.next;
 		}
 		
-		newHeadAux.next = newTail;
+		newHeadAux.next = head;
 		
 		return newHead;
 	}

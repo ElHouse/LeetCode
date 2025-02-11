@@ -39,10 +39,6 @@ public class _498_Diagonal_Traverse {
 
         if (x == answer.length) return;
 
-        System.out.println("########################------------movements-->");
-        System.out.println("X>" + x);
-        System.out.println("Y>" + y);
-
         switch (step) {
             case 0: {
 //				  int auxX = x;

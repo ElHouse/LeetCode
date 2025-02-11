@@ -11,7 +11,7 @@ public class _648_Replace_Words {
 //	Memory Usage: 54.6 MB, less than 50.00% of Java online submissions for Replace Words.
     public String replaceWords(List<String> dict, String sentence) {
 
-        if (dict == null || dict.size() == 0) return sentence;
+        if (dict == null || dict.isEmpty()) return sentence;
 
         dict.forEach(s -> insertTrie(s));
 

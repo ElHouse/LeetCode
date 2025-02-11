@@ -7,7 +7,7 @@ import java.util.*;
 public class _2415_Reverse_Odd_Levels_of_Binary_Tree {
 
 
-    private Map<Integer, List<TreeNode>> niveles = new HashMap<>();
+    private final Map<Integer, List<TreeNode>> niveles = new HashMap<>();
 
     public TreeNode reverseOddLevels(TreeNode root) {
         System.out.println("------------------------------------");

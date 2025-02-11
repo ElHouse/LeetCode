@@ -14,7 +14,7 @@ public class _133_Clone_Graph {
 	}
 	
 	
-	private Map<Node,Node > map = new HashMap<>();
+	private final Map<Node,Node > map = new HashMap<>();
 
 	private Node dfs(Node actual, Node prev) {
 		

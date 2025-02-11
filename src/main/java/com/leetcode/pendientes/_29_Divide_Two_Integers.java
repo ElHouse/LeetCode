@@ -11,8 +11,8 @@ public class _29_Divide_Two_Integers {
         int count = 0;
         int suma = 0;
 
-        boolean negativoDivisor = (divisor < 0) ? true : false;
-        boolean negativoDividend = (dividend < 0) ? true : false;
+        boolean negativoDivisor = divisor < 0;
+        boolean negativoDividend = dividend < 0;
 
         if (negativoDivisor) {
             divisor *= -1;

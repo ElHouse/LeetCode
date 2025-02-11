@@ -68,7 +68,7 @@ Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
 
             sum--;
 
-            for (; j < nums.length; ) {
+            while (j < nums.length) {
 
                 int next = nums[j];
 

@@ -54,10 +54,7 @@ public class _557_Reverse_Words_in_a_String_III {
     		sb.append(cola.poll());
     		sb.append(" ");
     	}
-    	
-    	
-    	System.out.println("final->"+sb.toString());
-    	
+
         	
     	return sb.toString().trim();
     }

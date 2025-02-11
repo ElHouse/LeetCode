@@ -1,3 +1,5 @@
+package com.leetcode;
+
 import java.util.Arrays;
 
 public class _189_Rotate_Array {

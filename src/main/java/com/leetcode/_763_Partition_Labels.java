@@ -21,15 +21,6 @@ public class _763_Partition_Labels {
 			int aux = mapa.get(S.charAt(i));
 			int max = algo(S, mapa, i, aux);
 
-			System.out.println("aux>"+aux);
-			System.out.println("max>"+max);
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
 			answer.add(max-i+1);
 			i = max+1;
 		}

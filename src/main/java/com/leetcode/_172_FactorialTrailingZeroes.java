@@ -14,10 +14,7 @@ public class _172_FactorialTrailingZeroes {
 
         if (n <= 4) return 0;
 
-
-        int newN = n;
-
-        int div = newN / 5;
+        int div = n / 5;
 
         int xx = n / 25;
         div += xx;

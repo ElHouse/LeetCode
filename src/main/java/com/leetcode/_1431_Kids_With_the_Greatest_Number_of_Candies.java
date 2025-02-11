@@ -40,7 +40,7 @@ Output: [true,false,true]
 
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
 
-        if (candies == null) return Collections.EMPTY_LIST;
+        if (candies == null) return new ArrayList<>();
 
         List<Boolean> booleans = new ArrayList<>(candies.length);
 

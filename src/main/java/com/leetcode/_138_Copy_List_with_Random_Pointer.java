@@ -94,8 +94,7 @@ public class _138_Copy_List_with_Random_Pointer {
     	    	
     	while(auxHead != null) {
     		
-    		Node aux = new Node(auxHead.val,null,null);
-    		tailNewHead.next = aux;
+    		tailNewHead.next = new Node(auxHead.val,null,null);
     		tailNewHead = tailNewHead.next;
     		
     		auxHead = auxHead.next;

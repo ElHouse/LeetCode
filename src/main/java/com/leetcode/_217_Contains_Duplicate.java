@@ -1,3 +1,5 @@
+package com.leetcode;
+
 import java.util.Arrays;
 
 public class _217_Contains_Duplicate {
