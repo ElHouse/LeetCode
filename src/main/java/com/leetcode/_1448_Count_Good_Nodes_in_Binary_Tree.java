@@ -10,9 +10,7 @@ public class _1448_Count_Good_Nodes_in_Binary_Tree {
 
         count = 0;
 
-        process(root, root.val);
-
-        return count ;
+        return dfs(root, root.val);
     }
 
 
@@ -27,6 +25,17 @@ public class _1448_Count_Good_Nodes_in_Binary_Tree {
 
         if (root.left != null) process(root.left, max);
         if (root.right != null) process(root.right, max);
+    }
+
+
+    private int dfs(TreeNode root, int max) {
+
+        if (root == null) return 0;
+
+        int left = dfs(root.left, Math.max(max, root.val));
+        int right = dfs(root.right, Math.max(max, root.val));
+
+        return left + right + ((root.val >= max) ? 1 : 0);
     }
 
 

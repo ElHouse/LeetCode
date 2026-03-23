@@ -1,7 +1,5 @@
 package com.leetcode;
 
-
-public class _724_Find_Pivot_Index {
 /*
 Given an array of integers nums, calculate the pivot index of this array.
 
@@ -35,9 +33,32 @@ Left sum = 0 (no elements to the left of index 0)
 Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
  */
-    //	Runtime: 2 ms, faster than 51.93% of Java online submissions for Find Pivot Index.
-    //	Memory Usage: 38.4 MB, less than 100.00% of Java online submissions for Find Pivot Index.
+public class _724_Find_Pivot_Index {
+
+
     public int pivotIndex(int[] nums) {
+
+        int[] prefix = new int[nums.length];
+        prefix[0] = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            prefix[i] = nums[i] + prefix[i - 1];
+        }
+
+        for (int right = 0; right < nums.length; right++) {
+
+            int sumPrev = right - 1 < 0 ? 0 : prefix[right - 1];
+            int sumNext = right + 1 > nums.length - 1 ? 0 : prefix[prefix.length - 1] - prefix[right + 1] + nums[right + 1];
+
+            if(sumPrev == sumNext){
+                return right;
+            }
+        }
+
+        return -1;
+    }
+
+
+    public int pivotIndex2(int[] nums) {
 
         if (nums == null || nums.length < 1) return -1;
 

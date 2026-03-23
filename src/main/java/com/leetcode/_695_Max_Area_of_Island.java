@@ -1,81 +1,59 @@
 package com.leetcode;
 
+/*
+You are given an m x n binary matrix grid. An island is a group of 1's (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.
 
+The area of an island is the number of cells with a value 1 in the island.
 
+Return the maximum area of an island in grid. If there is no island, return 0.
+ */
 public class _695_Max_Area_of_Island {
 
-	
-//	Runtime: 2 ms, faster than 100.00% of Java online submissions for Max Area of Island.
-//	Memory Usage: 44.9 MB, less than 44.44% of Java online submissions for Max Area of Island.
+
+    int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+
     public int maxAreaOfIsland(int[][] grid) {
-     
-    	if(grid==null) return 0;
-    	
-    	for (int i = 0; i < grid.length; i++) {
-			
-    		for (int j = 0; j < grid[0].length; j++) {
-				
-				if(grid[i][j] == 1) {
-					algo(grid,i,j);
-					max = Math.max(max,count);
-					count=0;	
-				}
-    		}
-		}
-    	
-    	
 
-    	for (int i = 0; i < grid.length; i++) {
-			
-    		for (int j = 0; j < grid[0].length; j++) {
-				System.out.print(grid[i][j]);    		
-    		}
-    		System.out.println();
-		}
-    	
-    	
-    	System.out.println("max>"+max);
-    	
-    	return max;
+        if (grid == null) return 0;
+
+        int max = 0;
+
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 1) {
+                    max = Math.max(max, dfs(i, j, grid));
+                }
+            }
+        }
+
+        return max;
     }
-    
-    int count = 0;
-    int max   = 0;
-    public int algo(int[][] grid, int x, int y) {
-    	
-    	grid[x][y] = 2;
-    	count++;
-    	
-    	//up
-    	if(isValid(x-1, y, grid) && grid[x-1][y] == 1) algo(grid, x-1,y);
-    	//down
-    	if(isValid(x+1, y, grid) && grid[x+1][y] == 1) algo(grid, x+1,y);
-    	//left
-    	if(isValid(x, y-1, grid) && grid[x][y-1] == 1) algo(grid, x,y-1);
-    	//right
-    	if(isValid(x, y+1, grid) && grid[x][y+1] == 1) algo(grid, x,y+1);
-    	
-    	
-    	return 0;
+
+
+    private int dfs(int x, int y, int[][] matrix) {
+
+        if (!isValid(x, y, matrix)) return 0;
+
+        matrix[x][y] = 0;
+        int suma = 1;
+
+        for (int[] direction : directions) {
+            suma += dfs(x + direction[0], y + direction[1], matrix);
+        }
+
+        return suma;
     }
-    
-    
-    public boolean isValid(int x, int y, int[][] grid) {
-    	
-    	if(x < 0) return false;
-    	if(y < 0) return false;
-    	
-    	if(x >= grid.length ) return false;
-    	if(y >= grid[0].length) return false;
-    		
-    	return true;
+
+    private boolean isValid(int x, int y, int[][] matrix) {
+
+        if (x < 0) return false;
+        if (y < 0) return false;
+
+        if (x >= matrix.length) return false;
+        if (y >= matrix[0].length) return false;
+
+        return matrix[x][y] == 1;
     }
-    
-
-
-
-
-
 
 
 }

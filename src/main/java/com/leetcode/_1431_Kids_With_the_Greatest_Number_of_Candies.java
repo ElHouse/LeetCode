@@ -1,7 +1,6 @@
 package com.leetcode;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class _1431_Kids_With_the_Greatest_Number_of_Candies {

@@ -6,19 +6,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _695_Max_Area_of_IslandTest {
 
-
-    _695_Max_Area_of_Island max_area_of_island = new _695_Max_Area_of_Island();
+   private final  _695_Max_Area_of_Island max_area_of_island = new _695_Max_Area_of_Island();
 
     @Test
     public void case1() {
-        int[][] grid = {{0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+        int[][] grid = {
+                {0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0},
                 {0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0},
                 {0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0},
                 {0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0}};
+                {0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0}
+        };
 
         assertEquals(6, max_area_of_island.maxAreaOfIsland(grid));
 
@@ -58,7 +59,8 @@ class _695_Max_Area_of_IslandTest {
 
     @Test
     public void case5() {
-        int[][] grid = {{0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+        int[][] grid = {
+                {0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0}};
         assertEquals(6, max_area_of_island.maxAreaOfIsland(grid));

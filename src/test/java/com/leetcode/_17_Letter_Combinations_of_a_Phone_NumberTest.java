@@ -1,6 +1,5 @@
 package com.leetcode;
 
-import com.leetcode._17_Letter_Combinations_of_a_Phone_Number;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collections;
@@ -28,8 +27,7 @@ class _17_Letter_Combinations_of_a_Phone_NumberTest {
 
 
 
-        expected = List.of("a","b","c");
-      //  assertEquals(expected, letterCombinationsOfAPhoneNumber.letterCombinations("2975"));
+        assertEquals(expected, letterCombinationsOfAPhoneNumber.letterCombinations("2975"));
 
     }
 

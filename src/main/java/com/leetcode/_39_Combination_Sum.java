@@ -6,48 +6,72 @@ import java.util.List;
 
 public class _39_Combination_Sum {
 
-//	Runtime: 264 ms, faster than 5.06% of Java online submissions for Combination Sum.
+    //	Runtime: 1 ms,
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> answer = new ArrayList<>();
+        backtrack(new ArrayList<>(), 0, 0, answer, target, candidates);
+        return answer;
+    }
+
+    private void backtrack(List<Integer> path, int suma, int index, List<List<Integer>> answer, int target, int[] candidates) {
+
+        if (suma == target) {
+            answer.add(new ArrayList<>(path));
+            return;
+        }
+
+        for (int i = index; i < candidates.length; i++) {
+            if (suma + candidates[i] <= target) {
+                path.add(candidates[i]);
+                backtrack(path, suma + candidates[i], i, answer, target, candidates);
+                path.removeLast();
+            }
+        }
+    }
+
+
+    //	Runtime: 264 ms, faster than 5.06% of Java online submissions for Combination Sum.
 //	Memory Usage: 46.7 MB, less than 5.19% of Java online submissions for Combination Sum.
-	public List<List<Integer>> combinationSum(int[] candidates, int target) {
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
 
-		List<List<Integer>> answer = new ArrayList<>();
+        List<List<Integer>> answer = new ArrayList<>();
 
-		if (candidates == null || candidates.length == 0)
-			return answer;
+        if (candidates == null || candidates.length == 0)
+            return answer;
 
-		for (int i = 0; i < candidates.length; i++) {
+        for (int i = 0; i < candidates.length; i++) {
 
-			List<Integer> list = new ArrayList<>();
-			dfs(i, candidates, target, candidates[i], list, answer);
-		}
+            List<Integer> list = new ArrayList<>();
+            dfs(i, candidates, target, candidates[i], list, answer);
+        }
 
-		return answer;
-	}
+        return answer;
+    }
 
-	public void dfs(int x, int[] nums, int target, int sum, List<Integer> list, List<List<Integer>> answer) {
+    public void dfs(int x, int[] nums, int target, int sum, List<Integer> list, List<List<Integer>> answer) {
 
-		list.add(nums[x]);
+        list.add(nums[x]);
 
-		Collections.sort(list);
-		
-		if (sum == target) {
-			for (List<Integer> l : answer) {
-				if (l.equals((list))) {
-					return;
-				}
-			}
-			answer.add(list);
-		} else if (sum > target) {
-			return;
-		} else {
+        Collections.sort(list);
 
-			for (int i = 0; i < nums.length; i++) {
-				List<Integer> aux = new ArrayList<>();
-				aux.addAll(list);
-				dfs(i, nums, target, sum + nums[i], aux, answer);
-			}
-		}
+        if (sum == target) {
+            for (List<Integer> l : answer) {
+                if (l.equals((list))) {
+                    return;
+                }
+            }
+            answer.add(list);
+        } else if (sum > target) {
+            return;
+        } else {
 
-	}
+            for (int i = 0; i < nums.length; i++) {
+                List<Integer> aux = new ArrayList<>();
+                aux.addAll(list);
+                dfs(i, nums, target, sum + nums[i], aux, answer);
+            }
+        }
+
+    }
 
 }

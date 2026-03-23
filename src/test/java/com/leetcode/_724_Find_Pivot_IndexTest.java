@@ -7,11 +7,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class _724_Find_Pivot_IndexTest {
 
 
-    _724_Find_Pivot_Index findPivotIndex = new _724_Find_Pivot_Index();
+    private final _724_Find_Pivot_Index findPivotIndex = new _724_Find_Pivot_Index();
 
     @Test
     public void case1() {
-        System.out.println("###############> case 1");
         int[] nums = {1, 7, 3, 6, 5, 6};
 
         assertEquals(3, findPivotIndex.pivotIndex(nums));
@@ -19,9 +18,31 @@ class _724_Find_Pivot_IndexTest {
 
     @Test
     public void case2() {
-        System.out.println("###############> case 2");
         int[] nums = {1, 2, 3};
 
         assertEquals(-1, findPivotIndex.pivotIndex(nums));
+    }
+
+
+    @Test
+    public void case3() {
+        int[] nums = {2, 1, -1};
+
+        assertEquals(0, findPivotIndex.pivotIndex(nums));
+    }
+
+
+    @Test
+    public void case4() {
+        int[] nums = {1, -1, 5};
+
+        assertEquals(2, findPivotIndex.pivotIndex(nums));
+    }
+
+    @Test
+    public void case5() {
+        int[] nums = {-1,-1,0,1,0,-1};
+
+        assertEquals(4, findPivotIndex.pivotIndex(nums));
     }
 }

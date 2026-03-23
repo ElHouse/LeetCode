@@ -1,15 +1,19 @@
 package com.leetcode;
 
 import com.leetcode.structure.ListNode;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.leetcode.structure.ListNode.crearListNodeXLista;
 
+
+@DisplayName("Test del algoritmo swap nodes")
 class _24_Swap_Nodes_in_PairsTest {
 
     private final _24_Swap_Nodes_in_Pairs swapNodesInPairs = new _24_Swap_Nodes_in_Pairs();
 
 
+    @DisplayName("happy path")
     @Test
     public void test1() {
 

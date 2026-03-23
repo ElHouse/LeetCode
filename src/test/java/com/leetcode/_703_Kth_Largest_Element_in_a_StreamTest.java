@@ -1,6 +1,5 @@
 package com.leetcode;
 
-import com.leetcode.pendientes._703_Kth_Largest_Element_in_a_Stream;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -41,7 +40,6 @@ class _703_Kth_Largest_Element_in_a_StreamTest {
     }
 
 
-
     @Test
     public void test03() {
 
@@ -56,6 +54,37 @@ class _703_Kth_Largest_Element_in_a_StreamTest {
     }
 
 
+    @Test
+    public void test04() {
 
 
+        int[] array = new int[0];
+
+        _703_Kth_Largest_Element_in_a_Stream KthLargest = new _703_Kth_Largest_Element_in_a_Stream(1, array);
+
+        assertEquals(-3, KthLargest.add(-3));
+        assertEquals(-2, KthLargest.add(-2));
+        assertEquals(-2, KthLargest.add(-4));
+        assertEquals(0, KthLargest.add(0));
+        assertEquals(4, KthLargest.add(4));
+
+    }
+
+
+    @Test
+    public void test05() {
+
+
+        int[] array = new int[]{0};
+
+        _703_Kth_Largest_Element_in_a_Stream KthLargest = new _703_Kth_Largest_Element_in_a_Stream(2, array);
+
+        assertEquals(-1, KthLargest.add(-1));
+        assertEquals(-1, KthLargest.add(-1));
+        assertEquals(0, KthLargest.add(1));
+        assertEquals(0, KthLargest.add(-2));
+        assertEquals(0, KthLargest.add(-4));
+        assertEquals(1, KthLargest.add(3));
+
+    }
 }

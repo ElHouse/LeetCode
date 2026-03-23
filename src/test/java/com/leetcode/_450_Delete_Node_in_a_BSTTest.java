@@ -1,7 +1,10 @@
 package com.leetcode;
 
 import com.leetcode.structure.TreeNode;
+import com.leetcode.structure.TreePrinter;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
 
 class _450_Delete_Node_in_a_BSTTest {
 
@@ -10,7 +13,7 @@ class _450_Delete_Node_in_a_BSTTest {
     //tood asserts
     @Test
     public void case1() {
-        System.out.println("8--------------case 1");
+        System.out.println("--------------case 1");
         TreeNode root1 = new TreeNode(13);
         TreeNode root2 = new TreeNode(9);
         TreeNode root3 = new TreeNode(7);
@@ -38,12 +41,9 @@ class _450_Delete_Node_in_a_BSTTest {
         root9.left = root10;
         root9.right = root11;
 
-
-        printTree(root1);
-        System.out.println();
+        TreePrinter.print(root1);
         deleteNodeInABst.deleteNode(root1, 8);
-        System.out.println();
-        printTree(root1);
+        TreePrinter.print(root1);
     }
 
 
@@ -79,11 +79,11 @@ class _450_Delete_Node_in_a_BSTTest {
         root9.right = root11;
 
 
-        printTree(root1);
-        System.out.println();
+        TreePrinter.print(root1);
+
         deleteNodeInABst.deleteNode(root1, 18);
-        System.out.println();
-        printTree(root1);
+        TreePrinter.print(root1);
+
     }
 
     @Test
@@ -118,11 +118,11 @@ class _450_Delete_Node_in_a_BSTTest {
         root9.right = root11;
 
 
-        printTree(root1);
-        System.out.println();
+        TreePrinter.print(root1);
+
         deleteNodeInABst.deleteNode(root1, 30);
-        System.out.println();
-        printTree(root1);
+        TreePrinter.print(root1);
+
     }
 
 
@@ -158,11 +158,11 @@ class _450_Delete_Node_in_a_BSTTest {
         root9.right = root11;
 
 
-        printTree(root1);
-        System.out.println();
+        TreePrinter.print(root1);
+
         deleteNodeInABst.deleteNode(root1, 16);
-        System.out.println();
-        printTree(root1);
+        TreePrinter.print(root1);
+
     }
 
     @Test
@@ -197,11 +197,11 @@ class _450_Delete_Node_in_a_BSTTest {
         root9.right = root11;
 
 
-        printTree(root1);
-        System.out.println();
+        TreePrinter.print(root1);
+
         deleteNodeInABst.deleteNode(root1, 9);
-        System.out.println();
-        printTree(root1);
+        TreePrinter.print(root1);
+
     }
 
     @Test
@@ -236,11 +236,11 @@ class _450_Delete_Node_in_a_BSTTest {
         root9.right = root11;
 
 
-        printTree(root1);
-        System.out.println();
+        TreePrinter.print(root1);
+
         deleteNodeInABst.deleteNode(root1, 15);
-        System.out.println();
-        printTree(root1);
+        TreePrinter.print(root1);
+
     }
 
     @Test
@@ -274,11 +274,11 @@ class _450_Delete_Node_in_a_BSTTest {
         root9.left = root10;
         root9.right = root11;
 
-        printTree(root1);
-        System.out.println();
-        deleteNodeInABst.deleteNode(root1, 13);
-        System.out.println();
-        printTree(root1);
+        TreePrinter.print(root1);
+
+
+        TreePrinter.print(deleteNodeInABst.deleteNode(root1, 13));
+
     }
 
 
@@ -292,11 +292,9 @@ class _450_Delete_Node_in_a_BSTTest {
 
         root1.left = root2;
 
-        printTree(root1);
-        System.out.println();
-        deleteNodeInABst.deleteNode(root1, 2);
-        System.out.println();
-        printTree(root1);
+        TreePrinter.print(root1);
+        TreePrinter.print(deleteNodeInABst.deleteNode(root1, 2));
+
     }
 
 
@@ -327,11 +325,10 @@ class _450_Delete_Node_in_a_BSTTest {
 //	  / \   \
 //	 2   4   7
 
-        printTree(root1);
-        System.out.println();
-        deleteNodeInABst.deleteNode(root1, 5);
-        System.out.println();
-        printTree(root1);
+        TreePrinter.print(root1);
+
+        TreePrinter.print(deleteNodeInABst.deleteNode(root1, 5));
+
     }
 
     @Test
@@ -361,24 +358,17 @@ class _450_Delete_Node_in_a_BSTTest {
 //	  / \   \
 //	 2   4   7
 
-        printTree(root1);
-        System.out.println();
-        deleteNodeInABst.deleteNode(root1, 0);
-        System.out.println();
-        printTree(root1);
+        TreePrinter.print(root1);
+
+        TreePrinter.print(deleteNodeInABst.deleteNode(root1, 0));
+
     }
 
-    public void printTree(TreeNode root) {
 
-
-        if (root.left != null) {
-            printTree(root.left);
-        }
-        System.out.print(" " + root.val);
-
-        if (root.right != null) {
-            printTree(root.right);
-        }
-
+    @Test
+    public void case11() {
+        TreeNode root = TreeNode.buildTree(Arrays.asList(5, 3, 6, 2, 4, null, null, 1));
+        TreePrinter.print(root);
+        TreePrinter.print(deleteNodeInABst.deleteNode(root, 3));
     }
 }

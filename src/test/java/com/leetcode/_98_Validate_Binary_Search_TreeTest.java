@@ -3,6 +3,8 @@ package com.leetcode;
 import com.leetcode.structure.TreeNode;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -13,25 +15,18 @@ class _98_Validate_Binary_Search_TreeTest {
     @Test
     public void case1() {
 
-        TreeNode root1 = new TreeNode(10);
-        TreeNode root2 = new TreeNode(9);
-        TreeNode root3 = new TreeNode(7);
-        TreeNode root4 = new TreeNode(8);
-        TreeNode root5 = new TreeNode(11);
-        TreeNode root6 = new TreeNode(15);
-
-
-        root1.left = root2;
-        root1.right = root6;
-
-        root2.left = root3;
-        root2.right = root5;
-
-        root3.right = root4;
+        TreeNode root1 = TreeNode.crearArbol(Arrays.asList(5,1,4,null,null,3,6));
 
         assertFalse(validateBinarySearchTree.isValidBST(root1));
+    }
 
 
+    @Test
+    public void case0() {
+
+        TreeNode root1 = TreeNode.crearArbol(Arrays.asList(2,1,3));
+
+        assertTrue(validateBinarySearchTree.isValidBST(root1));
     }
 
     @Test
@@ -53,6 +48,8 @@ class _98_Validate_Binary_Search_TreeTest {
         root2.right = root5;
 
         root3.right = root4;
+
+        TreeNode.imprimirPorNiveles(root1);
 
         assertTrue(validateBinarySearchTree.isValidBST(root1));
     }

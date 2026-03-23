@@ -18,6 +18,12 @@ public class ListNode {
         this.next = next;
     }
 
+    @Override
+    public String toString() {
+        return "ListNode{" +
+                "val=" + val +
+                '}';
+    }
 
     public static ListNode crearListNodeXLista(int[] array) {
 
@@ -47,6 +53,11 @@ public class ListNode {
 
     public static boolean iguales(ListNode head, ListNode head2) {
 
+        System.out.println("Iguales");
+
+        imprimir(head);
+        imprimir(head2);
+
         while (head != null && head2 != null) {
             if (head.val != head2.val) return false;
 
@@ -54,8 +65,8 @@ public class ListNode {
             head2 = head2.next;
         }
 
-        if(head == null && head2 != null) return false;
-        if(head != null && head2 == null) return false;
+        if (head == null && head2 != null) return false;
+        if (head != null && head2 == null) return false;
 
 
         return true;

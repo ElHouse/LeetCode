@@ -2,8 +2,6 @@ package com.leetcode;
 
 import java.util.Stack;
 
-public class _735_Asteroid_Collision {
-
 /*
 We are given an array asteroids of integers representing asteroids in a row. The indices of the asteriod in the array represent their relative position in space.
 
@@ -29,9 +27,69 @@ Input: asteroids = [10,2,-5]
 Output: [10]
 Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
 */
+public class _735_Asteroid_Collision {
 
 
     public int[] asteroidCollision(int[] asteroids) {
+
+        Stack<Integer> right = new Stack<>();//+
+        Stack<Integer> left = new Stack<>();//-
+
+
+        for (int i = 0; i < asteroids.length; i++) {
+
+            if (asteroids[i] > 0) {
+                right.add(asteroids[i]);
+            } else {
+
+
+                int neg = asteroids[i] * -1;
+
+                while (!right.isEmpty() && right.peek() < neg) {
+                    right.pop();
+                }
+
+                if(neg == right.peek()){
+                    right.pop();
+                }
+
+
+                left.add(asteroids[i] * -1);
+            }
+
+            while (!right.isEmpty() && !left.isEmpty()) {
+
+                if (right.peek() > left.peek()) {
+                    left.pop();
+                } else if (right.peek() < left.peek()) {
+                    right.pop();
+                } else {
+                    right.pop();
+                    left.pop();
+                }
+            }
+        }
+
+        int[] result = new int[right.size() + left.size()];
+        int i = 0;
+
+        while (!right.isEmpty() || !left.isEmpty()) {
+
+            if (!right.isEmpty()) {
+                result[i] = right.pop();
+            }
+
+            if (!left.isEmpty()) {
+                result[i] = left.pop();
+            }
+            i++;
+        }
+
+        return result;
+    }
+
+
+    public int[] asteroidCollision2(int[] asteroids) {
 
         Stack<Integer> right = new Stack<>();//+
         Stack<Integer> left = new Stack<>();//-

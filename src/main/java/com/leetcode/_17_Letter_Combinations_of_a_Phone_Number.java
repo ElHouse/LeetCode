@@ -7,11 +7,16 @@ import java.util.Map;
 
 public class _17_Letter_Combinations_of_a_Phone_Number {
 
-    private final List<String> response = new ArrayList<>();
-    private final Map<Character, List<String>> map = new HashMap<>();
 
+    public List<String> letterCombinations(String digits) {
 
-    public _17_Letter_Combinations_of_a_Phone_Number() {
+        Map<Character, List<String>> map = new HashMap<>();
+        List<String> response = new ArrayList<>();
+
+        if (digits == null || digits.isBlank()) {
+            return response;
+        }
+
         map.put('1', new ArrayList<>());
         map.put('2', List.of("a", "b", "c"));
         map.put('3', List.of("d", "e", "f"));
@@ -21,37 +26,27 @@ public class _17_Letter_Combinations_of_a_Phone_Number {
         map.put('7', List.of("p", "q", "r", "s"));
         map.put('8', List.of("t", "u", "v"));
         map.put('9', List.of("w", "x", "y", "z"));
-    }
 
-    public List<String> letterCombinations(String digits) {
-        response.clear();
+        StringBuilder sb = new StringBuilder();
 
-        if (digits == null || digits.isBlank()) {
-            return response;
-        }
-
-        process(digits, 0, "");
+        backtracking(response, sb, map, digits, 0);
 
         return response;
     }
 
 
-    private void process(String digits, int i, String combination) {
+    private void backtracking(List<String> response, StringBuilder sb, Map<Character, List<String>> map, String digits, int index) {
 
-
-        if (digits.length() == i) {
-            response.add(combination);
-        } else {
-            List<String> letters = map.get(digits.charAt(i));
-
-            for (int j = 0; j < letters.size(); j++) {
-
-                String aux = combination + letters.get(j);
-                process(digits, i + 1, aux);
-            }
-
+        if (sb.length() == digits.length()) {
+            response.add(sb.toString());
+            return;
         }
 
-
+        for (String str : map.getOrDefault(digits.charAt(index), new ArrayList<>())) {
+            sb.append(str);
+            backtracking(response, sb, map, digits, index + 1);
+            sb.deleteCharAt(sb.length() - 1);
+        }
     }
+
 }

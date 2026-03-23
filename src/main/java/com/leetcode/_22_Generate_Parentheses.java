@@ -6,82 +6,35 @@ import java.util.List;
 
 public class _22_Generate_Parentheses {
 
-    final List<String> answer = new ArrayList<>();
-
     public List<String> generateParenthesis(int n) {
 
-        if (n < 0) return answer;
+        List<String> response = new ArrayList<>();
 
-        backTracking(1, n, "()");
+        bt(response, new StringBuilder(), n, n);
 
-        System.out.println(answer.size());
-        System.out.println(answer);
-
-        return answer;
+        return response;
     }
 
+    private void bt(List<String> response, StringBuilder sb, int a, int c) {
 
-    public void backTracking(int i, int target, String str) {
+        if (a == 0 && c == 0) {
+            response.add(sb.toString());
+        }
 
-        if (answer.contains(str)) return;
-
-        if (i == target) {
-            answer.add(str);
+        if (c < a) {
             return;
         }
 
-        StringBuilder sb = new StringBuilder();
-
-
-        //left
-        sb.setLength(0);
-        sb.append("()");
-        sb.append(str);
-        backTracking(i + 1, target, sb.toString());
-
-        //right
-        sb.setLength(0);
-        sb.append(str);
-        sb.append("()");
-        backTracking(i + 1, target, sb.toString());
-
-        //surrounding
-        //full
-        int auxX = -1;
-        int y = 0;
-        int count = 0;
-        for (int x = 0; x < str.length(); y++) {
-
-            char c = str.charAt(y);
-            if (c == '(') count++;
-            else count--;
-
-            if (count == 0) {
-
-                sb.setLength(0);
-                sb.append(str, 0, x);
-                sb.append("(");
-                sb.append(str, x, y + 1);
-                sb.append(")");
-                sb.append(str.substring(y + 1));
-
-                backTracking(i + 1, target, sb.toString());
-
-                if (auxX == -1) {
-                    auxX = y;
-                }
-                if (y == str.length() - 1) {
-                    x = auxX;
-                    auxX = -1;
-                    y = x;
-                    x++;
-                }
-
-            }
-
+        if (a > 0) {
+            sb.append("(");
+            bt(response, sb, a - 1, c);
+            sb.deleteCharAt(sb.length() - 1);
         }
 
+        if (c > 0) {
+            sb.append(")");
+            bt(response, sb, a, c - 1);
+            sb.deleteCharAt(sb.length() - 1);
+        }
     }
-
-
 }

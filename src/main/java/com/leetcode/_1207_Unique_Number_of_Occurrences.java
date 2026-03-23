@@ -1,15 +1,29 @@
 package com.leetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 
 public class _1207_Unique_Number_of_Occurrences {
 
+
+    public boolean uniqueOccurrences(int[] arr) {
+
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for(int i=0; i<arr.length; i++){
+            map.put(arr[i], map.getOrDefault(arr[i], 0)+1);
+        }
+
+        Set<Integer> set = new HashSet<>(map.values());
+
+
+        return map.size()==set.size();
+    }
+
+
     //	Runtime: 1 ms, faster than 99.74% of Java online submissions for Unique Number of Occurrences.
 	//	Memory Usage: 34.6 MB, less than 100.00% of Java online submissions for Unique Number of Occurrences.
-    public boolean uniqueOccurrences(int[] arr) {
+    public boolean uniqueOccurrences2(int[] arr) {
 
         if (arr == null) return false;
         if (arr.length == 1) return true;

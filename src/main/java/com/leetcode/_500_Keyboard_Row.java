@@ -17,6 +17,7 @@ public class _500_Keyboard_Row {
     	String line2= "asdfghjkl";
     	String line3= "zxcvbnm";
 
+
     	boolean[] set1 = new boolean[26];
     	boolean[] set2 = new boolean[26];
     	boolean[] set3 = new boolean[26];

@@ -1,6 +1,5 @@
 package com.leetcode;
 
-import com.leetcode.pendientes._62_Unique_Paths;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

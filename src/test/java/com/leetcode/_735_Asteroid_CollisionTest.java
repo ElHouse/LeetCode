@@ -2,6 +2,8 @@ package com.leetcode;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class _735_Asteroid_CollisionTest {
@@ -11,7 +13,9 @@ class _735_Asteroid_CollisionTest {
 
     @Test
     public void test01() {
-        assertArrayEquals(new int[]{5, 10}, asteroidCollision.asteroidCollision(new int[]{5, 10, -5}));
+        int[] result = asteroidCollision.asteroidCollision(new int[]{5, 10, -5});
+        System.out.println(Arrays.toString(result));
+        assertArrayEquals(new int[]{5, 10}, result);
     }
 
     @Test
@@ -28,7 +32,9 @@ class _735_Asteroid_CollisionTest {
 
     @Test
     public void test04() {
-        assertArrayEquals(new int[]{-8, -8, -12}, asteroidCollision.asteroidCollision(new int[]{3, -8, -8, 9, 4, 7, 11, -1, 4, -12}));
+        int[] result = asteroidCollision.asteroidCollision(new int[]{3, -8, -8, 9, 4, 7, 11, -1, 4, -12});
+        System.out.println(Arrays.toString(result));
+        assertArrayEquals(new int[]{-8, -8, -12}, result);
     }
 
     @Test

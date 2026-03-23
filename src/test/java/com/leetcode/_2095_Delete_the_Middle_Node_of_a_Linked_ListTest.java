@@ -97,8 +97,21 @@ class _2095_Delete_the_Middle_Node_of_a_Linked_ListTest {
         ListNode head = ListNode.crearListNodeXLista(new int[]{1});
 
         ListNode result = deleteTheMiddleNodeOfALinkedListTest.deleteMiddle(head);
-
+        ListNode.imprimir(result);
         assertNull(result);
+    //    assertTrue(ListNode.iguales(ListNode.crearListNodeXLista(new int[]{1}), result));
+    }
+
+    @Test
+    public void test09() {
+
+        ListNode head = ListNode.crearListNodeXLista(new int[]{3,5,81,82,2,10});
+
+        ListNode result = deleteTheMiddleNodeOfALinkedListTest.deleteMiddle(head);
+
+        ListNode.imprimir(result);
+
+        assertTrue(ListNode.iguales(ListNode.crearListNodeXLista(new int[]{3,5,81,2,10}), result));
     }
 
 

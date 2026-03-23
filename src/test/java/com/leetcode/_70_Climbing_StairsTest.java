@@ -18,6 +18,8 @@ class _70_Climbing_StairsTest {
         assertEquals(5, climbingStairs.climbStairs(4));
         assertEquals(8, climbingStairs.climbStairs(5));
         assertEquals(13, climbingStairs.climbStairs(6));
+        assertEquals(1836311903, climbingStairs.climbStairs(45));
+
 
     }
 }

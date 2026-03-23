@@ -1,0 +1,33 @@
+package com.leetcode;
+
+/*
+You are given two strings s and t consisting of only lowercase English letters.
+
+Return the minimum number of characters that need to be appended to the end of s so that t becomes a subsequence of s.
+
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
+ */
+public class _2486_Append_Characters_to_String_to_Make_Subsequence {
+
+
+    public int appendCharacters(String s, String t) {
+
+        int j = 0;
+        int i = 0;
+
+        for (; i < t.length() && j < s.length();) {
+
+            for (; j < s.length(); j++) {
+
+                if (s.charAt(j) == t.charAt(i)) {
+                    i++;
+                    j++;
+                    break;
+                }
+            }
+
+        }
+
+        return t.length() - i;
+    }
+}

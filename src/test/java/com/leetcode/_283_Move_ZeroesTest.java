@@ -30,4 +30,12 @@ class _283_Move_ZeroesTest {
         assertArrayEquals(new int[]{0, 0, 0, 0}, array);
     }
 
+    @Test
+    public void test04() {
+        int[] array = new int[]{1, 0};
+        moveZeroes.moveZeroes(array);
+        assertArrayEquals(new int[]{1,0}, array);
+    }
+
+
 }

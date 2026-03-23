@@ -1,6 +1,9 @@
 package com.leetcode;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class _1657_Determine_if_Two_Strings_Are_Close {
 
@@ -41,9 +44,33 @@ Apply Operation 2: "baaccc" -> "abbccc"
 
  */
 
-
-
     public boolean closeStrings(String word1, String word2) {
+
+        if (word1.isEmpty() || word2.isEmpty()) return false;
+        if (word1.length() !=  word2.length()) return false;
+
+        Map<Character, Integer> map1 = new HashMap<>();
+        Map<Character, Integer> map2 = new HashMap<>();
+
+        for (int i = 0; i < word1.length(); i++) {
+            map1.put(word1.charAt(i), map1.getOrDefault(word1.charAt(i),0)+1);
+            map2.put(word2.charAt(i), map2.getOrDefault(word2.charAt(i),0)+1);
+        }
+
+        if(map1.size() != map2.size()) return false;
+        if(!map1.keySet().equals(map2.keySet())) return false;
+
+        String arr1  = map1.values().stream().sorted().map(i->String.valueOf(i)).collect(Collectors.joining());
+        String arr2  = map2.values().stream().sorted().map(i->String.valueOf(i)).collect(Collectors.joining());
+        System.out.println(arr1);
+        System.out.println(arr2);
+
+        System.out.println(arr1.equals(arr2));
+        return arr1.equals(arr2);
+    }
+
+    //26ms
+    public boolean closeStrings2(String word1, String word2) {
 
         if (word1.isEmpty() || word2.isEmpty()) return false;
 

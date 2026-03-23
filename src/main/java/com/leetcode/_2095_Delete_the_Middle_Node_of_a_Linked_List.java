@@ -2,10 +2,7 @@ package com.leetcode;
 
 import com.leetcode.structure.ListNode;
 
-public class _2095_Delete_the_Middle_Node_of_a_Linked_List {
-
-
-    /*
+/*
 
 You are given the head of a linked list. Delete the middle node, and return the head of the modified linked list.
 
@@ -40,9 +37,40 @@ Explanation:
 The above figure represents the given linked list.
 For n = 2, node 1 with value 1 is the middle node, which is marked in red.
 Node 0 with value 2 is the only node remaining after removing node 1.
-     */
+ */
+public class _2095_Delete_the_Middle_Node_of_a_Linked_List {
 
     public ListNode deleteMiddle(ListNode head) {
+
+        ListNode aux = new ListNode(-1, head);
+        ListNode slow = aux;
+        ListNode fast = head;
+        int count = 0;
+
+        while (fast != null) {
+
+            fast = fast.next;
+
+            if (fast != null) {
+                fast = fast.next;
+                slow = slow.next;
+                count++;
+            }
+        }
+
+
+        if (count == 0) {
+            return null;
+        } else {
+            slow.next = slow.next.next;
+        }
+
+
+        return head;
+    }
+
+
+    public ListNode deleteMiddle2(ListNode head) {
 
         int count = 1;
         int mover = 1;
@@ -56,7 +84,7 @@ Node 0 with value 2 is the only node remaining after removing node 1.
             count++;
 
             if (mover == 2) {
-                 prev = prev.next;
+                prev = prev.next;
                 mover = 0;
             }
 

@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class _876_Middle_of_the_Linked_ListTest {
 
-    _876_Middle_of_the_Linked_List middleOfTheLinkedList = new _876_Middle_of_the_Linked_List();
+    private final _876_Middle_of_the_Linked_List middleOfTheLinkedList = new _876_Middle_of_the_Linked_List();
 
 
     @Test

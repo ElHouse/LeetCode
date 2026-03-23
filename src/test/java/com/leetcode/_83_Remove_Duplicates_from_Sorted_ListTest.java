@@ -19,8 +19,7 @@ class _83_Remove_Duplicates_from_Sorted_ListTest {
         head2.next = head3;
 
         printList(head1);
-        removeDuplicatesFromSortedListTest.deleteDuplicates(head1);
-        printList(head1);
+        printList(removeDuplicatesFromSortedListTest.deleteDuplicates(head1));
     }
 
     @Test
@@ -38,8 +37,7 @@ class _83_Remove_Duplicates_from_Sorted_ListTest {
         head4.next = head5;
 
         printList(head1);
-        removeDuplicatesFromSortedListTest.deleteDuplicates(head1);
-        printList(head1);
+        printList(removeDuplicatesFromSortedListTest.deleteDuplicates(head1));
     }
 
     @Test
@@ -53,8 +51,7 @@ class _83_Remove_Duplicates_from_Sorted_ListTest {
         head2.next = head3;
 
         printList(head1);
-        removeDuplicatesFromSortedListTest.deleteDuplicates(head1);
-        printList(head1);
+        printList( removeDuplicatesFromSortedListTest.deleteDuplicates(head1));
     }
 
     @Test
@@ -66,9 +63,24 @@ class _83_Remove_Duplicates_from_Sorted_ListTest {
         head1.next = head2;
 
         printList(head1);
-        removeDuplicatesFromSortedListTest.deleteDuplicates(head1);
-        printList(head1);
+        printList( removeDuplicatesFromSortedListTest.deleteDuplicates(head1));
     }
+
+    @Test
+    public void case5() {
+        System.out.println("case 5");
+        ListNode head1 = new ListNode(1);
+
+        printList(head1);
+        printList( removeDuplicatesFromSortedListTest.deleteDuplicates(head1));
+    }
+
+    @Test
+    public void case6() {
+        System.out.println("case 5");
+        printList( removeDuplicatesFromSortedListTest.deleteDuplicates(null));
+    }
+
 
     private void printList(ListNode head) {
 

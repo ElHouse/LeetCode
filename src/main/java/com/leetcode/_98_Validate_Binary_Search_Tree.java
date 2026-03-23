@@ -4,47 +4,36 @@ import com.leetcode.structure.TreeNode;
 
 public class _98_Validate_Binary_Search_Tree {
 
-    //	Runtime: 1 ms, faster than 49.58% of Java online submissions for Validate Binary Search Tree.
-//	Memory Usage: 38.9 MB, less than 82.33% of Java online submissions for Validate Binary Search Tree.
     int lasDigit = Integer.MIN_VALUE + 1;
+    boolean isValid;
 
     public boolean isValidBST(TreeNode root) {
 
-        try {
-            algo(root);
-        } catch (Exception e) {
-            return false;
-        }
+        if (root == null) return false;
 
-        return true;
+        isValid = true;
+
+        bt(root);
+
+        return isValid;
     }
 
+    private void bt(TreeNode node) {
 
-    public void algo(TreeNode root) throws Exception {
+        if (!isValid) return;
+        if (node == null) return;
 
+        if (node.left != null) bt(node.left);
 
-        if (root.left != null) {
-            algo(root.left);
-        }
-
-        if (lasDigit == Integer.MIN_VALUE + 1) {
-            lasDigit = root.val;
-        } else if (lasDigit > root.val) {
-
-            System.out.println("ex root>" + root.val);
-            System.out.println("ex last>" + lasDigit);
-            throw new Exception("nop");
+        if (lasDigit < node.val) {
+            lasDigit = node.val;
         } else {
-            lasDigit = root.val;
+            isValid = false;
         }
 
-        if (root.right != null) {
-            algo(root.right);
-        }
-
+        if (node.right != null) bt(node.right);
 
     }
-
 
 
 }

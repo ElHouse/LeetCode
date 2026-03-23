@@ -1,6 +1,5 @@
 package com.leetcode;
 
-public class _1456_Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length {
 /*
 
 Given a string s and an integer k, return the maximum number of vowel letters in any substring of s with length k.
@@ -25,7 +24,19 @@ Input: s = "leetcode", k = 3
 Output: 2
 Explanation: "lee", "eet" and "ode" contain 2 vowels.
  */
+public class _1456_Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length {
 
+
+    public int maxVowels2(String s, int k) {
+
+        int max = 0;
+
+
+
+
+
+        return max;
+    }
 
     public int maxVowels(String s, int k) {
 

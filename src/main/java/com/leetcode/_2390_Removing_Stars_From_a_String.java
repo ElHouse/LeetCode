@@ -1,7 +1,6 @@
 package com.leetcode;
 
-public class _2390_Removing_Stars_From_a_String {
-
+import java.util.Stack;
 
 /*
 You are given a string s, which contains stars *.
@@ -34,21 +33,22 @@ Output: ""
 Explanation: The entire string is removed, so we return an empty string.
 
 */
-
+public class _2390_Removing_Stars_From_a_String {
 
     public String removeStars(String s) {
 
         StringBuilder sb = new StringBuilder();
-        String star = "*";
+        char star = '*';
 
         for (int i = 0; i < s.length(); i++) {
 
-            if (String.valueOf(s.charAt(i)).equals(star)) {
+            char letter = s.charAt(i);
+            if (letter == star) {
                 if (!sb.isEmpty()) {
                     sb.deleteCharAt(sb.length() - 1);
                 }
             } else {
-                sb.append(s.charAt(i));
+                sb.append(letter);
             }
         }
 
